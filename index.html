@@ -7,26 +7,92 @@
 <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
 <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Raleway">
 <style>
-body,h1,h2{font-family: "Raleway", sans-serif}
-body, html {height: 100%}
-p {line-height: 2}
-.bgimg, .bgimg2 {
+body, h1, h2 {
+  font-family: "Raleway", sans-serif;
+}
+
+body, html {
+  height: 100%;
+}
+
+p {
+  line-height: 2;
+}
+
+.bgimg,
+.bgimg2 {
   min-height: 100%;
   background-position: center;
   background-size: cover;
+  background-attachment: fixed;
 }
-.bgimg {background-image: url("img/1.png")}
-.bgimg2 {background-image: url("img/3.jpg")}
+
+.bgimg {
+  background-image: url("img/1.png");
+}
+
+.bgimg2 {
+  background-image: url("img/3.jpg");
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes slideIn {
+  from {
+    transform: translateY(-100%);
+  }
+  to {
+    transform: translateY(0);
+  }
+}
+
+/* Apply the animation to the header */
+.animated-header {
+  animation: fadeIn 3s ease-in-out, slideIn 1s ease-in-out; /* You can adjust the duration and timing function */
+}
+
+/* Animated typography */
+.animated-typography {
+  overflow: hidden;
+  display: inline-block;
+}
+
+.animated-typography h1,
+.animated-typography h2,
+.animated-typography h3 {
+  display: inline-block;
+  transform-origin: 50% 50%;
+  transform: translateZ(0);
+}
+
+.animated-typography h1 {
+  animation: fadeIn 1s ease-in-out;
+}
+
+.animated-typography h2 {
+  animation: fadeIn 1.5s ease-in-out;
+}
+
+.animated-typography h3 {
+  animation: fadeIn 2s ease-in-out;
+}
 </style>
 </head>
 <body>
 
 <!-- Header / Home-->
-<header class="w3-display-container w3-wide bgimg w3-grayscale-min" id="home">
-  <div class="w3-display-middle w3-text-white w3-center">
+<header class="w3-display-container w3-wide bgimg w3-grayscale-min animated-header" id="home">
+  <div class="w3-display-middle w3-text-white w3-center animated-typography">
     <h1 class="w3-jumbo">VIRTUAL REALITY</h1>
     <h2>THE FUTURE</h2>
-    <h2><b>A GLIMPSE OF WHAT'S COMING NEXT!</b></h2>
+    <h3><b>A GLIMPSE OF WHAT'S COMING NEXT!</b></h3>
   </div>
 </header>
 
@@ -43,21 +109,20 @@ p {line-height: 2}
 <!-- About / Jane And John -->
 <div class="w3-container w3-padding-64 w3-pale-red w3-grayscale-min" id="us">
   <div class="w3-content">
-    <h1 class="w3-center w3-text-grey"><b>A THRILLING ROLLERCOASTER RIDE</b></h1>
-    <iframe width="100%" height="350" margin="32px 0" src="https://www.youtube.com/embed/oAJLKDMihnU?si=J-PB2EOE4jMxtP9m" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
-    <p><i>Experiencing a rollercoaster ride in virtual reality (VR) offers a fascinating intersection between technology and human psychology, influencing both mind and behavior in unique ways. From a psychological standpoint, the virtual environment engages the brain in a sensory illusion, tricking it into believing the body is undergoing the physical sensations of a real rollercoaster. This simulation triggers a cascade of responses, from the release of adrenaline to the activation of the brain's pleasure centers, mirroring the physiological reactions of an actual theme park ride.</i>
-    </p><br>
-    <p class="w3-center"><a href="#wedding" class="w3-button w3-black w3-round w3-padding-large w3-large">How was the Experience?</a></p>
+    <div class="w3-center animated-typography">
+      <h1 class="w3-text-grey"><b>A THRILLING ROLLERCOASTER RIDE</b></h1>
+      <iframe width="100%" height="350" margin="32px 0" src="https://www.youtube.com/embed/oAJLKDMihnU?si=J-PB2EOE4jMxtP9m" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+      <p><i>Experiencing a rollercoaster ride in virtual reality (VR) offers a fascinating intersection between technology and human psychology, influencing both mind and behavior in unique ways. From a psychological standpoint, the virtual environment engages the brain in a sensory illusion, tricking it into believing the body is undergoing the physical sensations of a real rollercoaster. This simulation triggers a cascade of responses, from the release of adrenaline to the activation of the brain's pleasure centers, mirroring the physiological reactions of an actual theme park ride.</i></p><br>
+      <p class="w3-center"><a href="#wedding" class="w3-button w3-black w3-round w3-padding-large w3-large">How was the Experience?</a></p>
+    </div>
   </div>
 </div>
 
 <!-- Background photo -->
 <div class="w3-display-container bgimg2">
-  <div class="w3-display-middle w3-text-white w3-center">
-    
+  <div class="w3-display-middle w3-text-white w3-center animated-typography">
     <h1 class="w3-jumbo">Future Applications Of</h1><br>
     <h2>VIRTUAL REALITY</h2>
-
   </div>
 </div>
 
@@ -81,7 +146,7 @@ p {line-height: 2}
   </div>
   <div class="w3-content">
     <h1 class="w3-text-grey"><b>Education And Training</b></h1>
-    <img class="w3-round-large w3-grayscale-min" src="img/5.jpg" style="width:100%;margin:64px 0">
+    <img class="w3-round-large w3-grayscale-min" src="img/5.jpg" style="width:100%;margin:70px 0">
     <div class="w3-row">
       <div class="w3-half">
         <h2>Immersive Learning Experience</h2>
@@ -170,7 +235,7 @@ p {line-height: 2}
 <footer class="w3-center w3-black w3-padding-16">
   <p>2023 Virtual Reality</p>
 </footer>
-<div class="w3-hide-small" style="margin-bottom:32px"> </div>
+<div class="w3-hide-small" style="margin-bottom:32px"> </div>
 
 </body>
-</html>
+</html> remove the first starting picture but keep the animated picture there]
