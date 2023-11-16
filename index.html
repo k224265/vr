@@ -1,136 +1,133 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-<title>Virtual Reality</title>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1">
-<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
-<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Raleway">
-  <style>
-    body, h1, h2 {
-      font-family: "Raleway", sans-serif;
-    }
+    <title>Virtual Reality</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Raleway">
+    <style>
+        body, h1, h2 {
+            font-family: "Raleway", sans-serif;
+        }
 
-    body, html {
-      height: 100%;
-      margin: 0;
-    }
+        body, html {
+            height: 100%;
+            margin: 0;
+            font-size: 16px;
+            line-height: 1.6;
+        }
 
-    p {
-      line-height: 2;
-    }
+        p {
+            line-height: 1.8;
+        }
 
-    .bgimg,
-    .bgimg2 {
-      min-height: 100%;
-      background-position: center;
-      background-size: cover;
-      background-attachment: fixed;
-    }
+        .bgimg,
+        .bgimg2 {
+            min-height: 100%;
+            background-position: center;
+            background-size: cover;
+            background-attachment: fixed;
+        }
 
-    .bgimg {
-      background-image: url("img/3.jpg"); /* Change the background image */
-    }
+        .bgimg {
+            background-image: url("img/1.png");
+        }
 
-    @keyframes fadeIn {
-      from {
-        opacity: 0;
-      }
-      to {
-        opacity: 1;
-      }
-    }
+        .bgimg2 {
+            background-image: url("img/3.jpg");
+        }
 
-    @keyframes slideIn {
-      from {
-        transform: translateY(-100%);
-      }
-      to {
-        transform: translateY(0);
-      }
-    }
+        @keyframes fadeIn {
+            from {
+                opacity: 0;
+            }
+            to {
+                opacity: 1;
+            }
+        }
 
-    /* Apply the animation to the header */
-    .animated-header {
-      animation: fadeIn 3s ease-in-out, slideIn 1s ease-in-out; /* You can adjust the duration and timing function */
-    }
+        @keyframes slideIn {
+            from {
+                transform: translateY(-100%);
+            }
+            to {
+                transform: translateY(0);
+            }
+        }
 
-    /* Animated typography */
-    .animated-typography {
-      overflow: hidden;
-      display: inline-block;
-    }
+        /* Apply the animation to the header */
+        .animated-header {
+            animation: fadeIn 3s ease-in-out, slideIn 1s ease-in-out;
+        }
 
-    .animated-typography h1,
-    .animated-typography h2,
-    .animated-typography h3 {
-      display: inline-block;
-      transform-origin: 50% 50%;
-      transform: translateZ(0);
-    }
+        /* Animated typography */
+        .animated-typography {
+            overflow: hidden;
+            display: inline-block;
+        }
 
-    .animated-typography h1 {
-      animation: fadeIn 1s ease-in-out;
-    }
+        .animated-typography h1,
+        .animated-typography h2,
+        .animated-typography h3 {
+            display: inline-block;
+            transform-origin: 50% 50%;
+            transform: translateZ(0);
+        }
 
-    .animated-typography h2 {
-      animation: fadeIn 1.5s ease-in-out;
-    }
+        .animated-typography h1 {
+            animation: fadeIn 1s ease-in-out;
+        }
 
-    .animated-typography h3 {
-      animation: fadeIn 2s ease-in-out;
-    }
+        .animated-typography h2 {
+            animation: fadeIn 1.5s ease-in-out;
+        }
 
-    /* Responsive styles */
-    @media screen and (max-width: 600px) {
-      .w3-bar-item {
-        width: 100%;
-        display: block;
-      }
-    }
-  </style>
+        .animated-typography h3 {
+            animation: fadeIn 2s ease-in-out;
+        }
+    </style>
 </head>
 <body>
 
 <!-- Header / Home-->
 <header class="w3-display-container w3-wide bgimg w3-grayscale-min animated-header" id="home">
-  <div class="w3-display-middle w3-text-white w3-center animated-typography">
-    <h1 class="w3-jumbo">VIRTUAL REALITY</h1>
-    <h2>THE FUTURE</h2>
-    <h3><b>A GLIMPSE OF WHAT'S COMING NEXT!</b></h3>
-  </div>
+    <div class="w3-display-middle w3-text-white w3-center animated-typography">
+        <h1 class="w3-jumbo">VIRTUAL REALITY</h1>
+        <h2>THE FUTURE</h2>
+        <h3><b>A GLIMPSE OF WHAT'S COMING NEXT!</b></h3>
+    </div>
 </header>
 
 <!-- Navbar (sticky bottom) -->
 <div class="w3-bottom w3-hide-small">
-  <div class="w3-bar w3-white w3-center w3-padding w3-opacity-min w3-hover-opacity-off">
-    <a href="#home" style="width:25%" class="w3-bar-item w3-button">Home</a>
-    <a href="#us" style="width:25%" class="w3-bar-item w3-button">DEMO</a>
-    <a href="#wedding" style="width:25%" class="w3-bar-item w3-button">FUTURE OF VR</a>
-    <a href="#rsvp" style="width:25%" class="w3-bar-item w3-button w3-hover-black">CONCLUSION</a>
-  </div>
+    <div class="w3-bar w3-white w3-center w3-padding w3-opacity-min w3-hover-opacity-off">
+        <a href="#home" style="width:25%" class="w3-bar-item w3-button">Home</a>
+        <a href="#us" style="width:25%" class="w3-bar-item w3-button">DEMO</a>
+        <a href="#wedding" style="width:25%" class="w3-bar-item w3-button">FUTURE OF VR</a>
+        <a href="#rsvp" style="width:25%" class="w3-bar-item w3-button w3-hover-black">CONCLUSION</a>
+    </div>
 </div>
 
 <!-- About / Jane And John -->
 <div class="w3-container w3-padding-64 w3-pale-red w3-grayscale-min" id="us">
-  <div class="w3-content">
-    <div class="w3-center animated-typography">
-      <h1 class="w3-text-grey"><b>A THRILLING ROLLERCOASTER RIDE</b></h1>
-      <iframe width="100%" height="350" margin="32px 0" src="https://www.youtube.com/embed/oAJLKDMihnU?si=J-PB2EOE4jMxtP9m" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
-      <p><i>Experiencing a rollercoaster ride in virtual reality (VR) offers a fascinating intersection between technology and human psychology, influencing both mind and behavior in unique ways. From a psychological standpoint, the virtual environment engages the brain in a sensory illusion, tricking it into believing the body is undergoing the physical sensations of a real rollercoaster. This simulation triggers a cascade of responses, from the release of adrenaline to the activation of the brain's pleasure centers, mirroring the physiological reactions of an actual theme park ride.</i></p><br>
-      <p class="w3-center"><a href="#wedding" class="w3-button w3-black w3-round w3-padding-large w3-large">How was the Experience?</a></p>
+    <div class="w3-content">
+        <div class="w3-center animated-typography">
+            <h1 class="w3-text-grey"><b>A THRILLING ROLLERCOASTER RIDE</b></h1>
+            <iframe width="100%" height="350" src="https://www.youtube.com/embed/oAJLKDMihnU?si=J-PB2EOE4jMxtP9m" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+            <p><i>Experiencing a rollercoaster ride in virtual reality (VR) offers a fascinating intersection between technology and human psychology, influencing both mind and behavior in unique ways. From a psychological standpoint, the virtual environment engages the brain in a sensory illusion, tricking it into believing the body is undergoing the physical sensations of a real rollercoaster. This simulation triggers a cascade of responses, from the release of adrenaline to the activation of the brain's pleasure centers, mirroring the physiological reactions of an actual theme park ride.</i></p><br>
+            <p class="w3-center"><a href="#wedding" class="w3-button w3-black w3-round w3-padding-large w3-large">How was the Experience?</a></p>
+        </div>
     </div>
-  </div>
 </div>
 
 <!-- Background photo -->
 <div class="w3-display-container bgimg2">
-  <div class="w3-display-middle w3-text-white w3-center animated-typography">
-    <h1 class="w3-jumbo">Future Applications Of</h1><br>
-    <h2>VIRTUAL REALITY</h2>
-  </div>
+    <div class="w3-display-middle w3-text-white w3-center animated-typography">
+        <h1 class="w3-jumbo">Future Applications Of</h1><br>
+        <h2>VIRTUAL REALITY</h2>
+    </div>
 </div>
-
 <!-- Wedding information -->
 <div class="w3-container w3-padding-64 w3-pale-red w3-grayscale-min w3-center" id="wedding">
   <div class="w3-content">
