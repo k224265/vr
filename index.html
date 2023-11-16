@@ -6,84 +6,89 @@
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
 <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Raleway">
-<style>
-body, h1, h2 {
-  font-family: "Raleway", sans-serif;
-}
+  <style>
+    body, h1, h2 {
+      font-family: "Raleway", sans-serif;
+    }
 
-body, html {
-  height: 100%;
-}
+    body, html {
+      height: 100%;
+      margin: 0;
+    }
 
-p {
-  line-height: 2;
-}
+    p {
+      line-height: 2;
+    }
 
-.bgimg,
-.bgimg2 {
-  min-height: 100%;
-  background-position: center;
-  background-size: cover;
-  background-attachment: fixed;
-}
+    .bgimg,
+    .bgimg2 {
+      min-height: 100%;
+      background-position: center;
+      background-size: cover;
+      background-attachment: fixed;
+    }
 
-.bgimg {
-  background-image: url("img/1.png");
-}
+    .bgimg {
+      background-image: url("img/3.jpg"); /* Change the background image */
+    }
 
-.bgimg2 {
-  background-image: url("img/3.jpg");
-}
+    @keyframes fadeIn {
+      from {
+        opacity: 0;
+      }
+      to {
+        opacity: 1;
+      }
+    }
 
-@keyframes fadeIn {
-  from {
-    opacity: 0;
-  }
-  to {
-    opacity: 1;
-  }
-}
+    @keyframes slideIn {
+      from {
+        transform: translateY(-100%);
+      }
+      to {
+        transform: translateY(0);
+      }
+    }
 
-@keyframes slideIn {
-  from {
-    transform: translateY(-100%);
-  }
-  to {
-    transform: translateY(0);
-  }
-}
+    /* Apply the animation to the header */
+    .animated-header {
+      animation: fadeIn 3s ease-in-out, slideIn 1s ease-in-out; /* You can adjust the duration and timing function */
+    }
 
-/* Apply the animation to the header */
-.animated-header {
-  animation: fadeIn 3s ease-in-out, slideIn 1s ease-in-out; /* You can adjust the duration and timing function */
-}
+    /* Animated typography */
+    .animated-typography {
+      overflow: hidden;
+      display: inline-block;
+    }
 
-/* Animated typography */
-.animated-typography {
-  overflow: hidden;
-  display: inline-block;
-}
+    .animated-typography h1,
+    .animated-typography h2,
+    .animated-typography h3 {
+      display: inline-block;
+      transform-origin: 50% 50%;
+      transform: translateZ(0);
+    }
 
-.animated-typography h1,
-.animated-typography h2,
-.animated-typography h3 {
-  display: inline-block;
-  transform-origin: 50% 50%;
-  transform: translateZ(0);
-}
+    .animated-typography h1 {
+      animation: fadeIn 1s ease-in-out;
+    }
 
-.animated-typography h1 {
-  animation: fadeIn 1s ease-in-out;
-}
+    .animated-typography h2 {
+      animation: fadeIn 1.5s ease-in-out;
+    }
 
-.animated-typography h2 {
-  animation: fadeIn 1.5s ease-in-out;
-}
+    .animated-typography h3 {
+      animation: fadeIn 2s ease-in-out;
+    }
 
-.animated-typography h3 {
-  animation: fadeIn 2s ease-in-out;
-}
-</style>
+    /* Responsive styles */
+    @media screen and (max-width: 600px) {
+      .w3-bar-item {
+        width: 100%;
+        display: block;
+      }
+    }
+  </style>
 </head>
 <body>
 
